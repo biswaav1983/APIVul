@@ -1,0 +1,14 @@
+version: "3"
+services:
+  mongo_db:
+    image: mongo
+    expose:
+    - "27017"
+  ede_node:
+    build: .
+    expose:
+      - "5000"
+    ports:
+      - "5000:5000"
+    depends_on:
+      - mongo_db
