@@ -5,7 +5,7 @@ Step 1: Open terminal
 
 Step 2: Access Directory with codebase
 
-cd /root/node-input-validationCopy
+cd /root/node-input-validation
 
 Step 3: Build the insecure app
 docker build -t node-input-validation .
